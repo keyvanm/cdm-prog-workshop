@@ -9,11 +9,9 @@ choice_list = [ROCK, PAPER, SCISSORS]  # small intro to lists
 
 
 def get_player_choice():
-    print "Please choose an option from r, p or s:"
-    player_choice = raw_input()
+    player_choice = raw_input("Please choose an option from r, p or s: ")
     while player_choice not in choice_list:
-        print "Please choose one of r, p or s:"
-        player_choice = raw_input()
+        player_choice = raw_input("Please choose one of r, p or s: ")
     return player_choice
 
 

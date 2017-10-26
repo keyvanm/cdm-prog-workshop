@@ -1,9 +1,8 @@
-import random  # importing modules
-from utils import ROCK, PAPER, SCISSORS, choice_list, get_player_choice
+from utils import ROCK, PAPER, SCISSORS, choice_list, get_player_choice, get_ai_choice
 
 player_choice = get_player_choice()  # calling functions
 
-ai_choice = choice_list[random.randint(0, 2)]  # random, list index
+ai_choice = get_ai_choice()  # random, list index
 print "AI picked ", ai_choice
 
 # if else conditionals
